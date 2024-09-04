@@ -1,0 +1,46 @@
+Diferencias entre Lenguajes Compilados e Interpretados
+
+1. Definición:
+
+Lenguajes Compilados: Los lenguajes compilados son aquellos que se traducen directamente a código máquina por un compilador antes de que el programa se ejecute. El resultado es un archivo ejecutable que puede correr directamente en el sistema operativo sin necesidad de un intérprete. Ejemplos: C, C++, Rust.
+
+Lenguajes Interpretados: Los lenguajes interpretados son aquellos en los que el código fuente es traducido a código máquina en tiempo real por un intérprete. El intérprete ejecuta el código línea por línea o en bloques, lo que puede añadir una sobrecarga adicional en la ejecución. Ejemplos: Python, Ruby, JavaScript.
+
+2. Tiempo de Ejecución:
+
+Lenguajes Compilados: Los programas en lenguajes compilados suelen ejecutarse más rápido. Esto se debe a que el código se traduce a código máquina optimizado por el compilador, lo que permite una ejecución eficiente por parte del hardware.
+
+Lenguajes Interpretados: Los programas en lenguajes interpretados suelen ser más lentos en comparación con los compilados. La interpretación en tiempo real añade una capa adicional que puede afectar el rendimiento general del programa.
+
+3. Tiempo de Compilación vs. Tiempo de Ejecución:
+
+Lenguajes Compilados: La fase de compilación puede llevar tiempo, especialmente para programas grandes, pero una vez que el programa está compilado, su ejecución es generalmente rápida.
+
+Lenguajes Interpretados: No requieren una fase de compilación, lo que puede hacer que el desarrollo y la prueba sean más rápidos. Sin embargo, el tiempo de ejecución puede ser más largo debido al proceso de interpretación en tiempo real.
+
+4. Optimización:
+
+Lenguajes Compilados: Los compiladores realizan optimizaciones para mejorar el rendimiento del código, como la eliminación de código muerto y la optimización de bucles. Esto resulta en código máquina eficiente.
+
+Lenguajes Interpretados: Los intérpretes tienen menos oportunidades para optimizar el código fuente. Sin embargo, algunos lenguajes interpretados modernos usan técnicas como la compilación Just-In-Time (JIT) para mejorar el rendimiento.
+
+5. Uso de Recursos:
+
+Lenguajes Compilados: Generalmente, los lenguajes compilados utilizan menos recursos en tiempo de ejecución debido a la eficiencia del código máquina.
+
+Lenguajes Interpretados: Pueden usar más memoria y CPU en tiempo de ejecución debido a la sobrecarga del intérprete y la traducción en tiempo real.
+
+6 Ejercicio Practico.
+Para ilustrar las diferencias de rendimiento entre lenguajes compilados e interpretados, realizamos un ejercicio de comparación utilizando el cálculo de la suma de números del 1 al 1,000,000,000.
+El programa en C se compila y ejecuta generando un archivo binario. En una máquina moderna, este código se ejecuta en un tiempo muy corto, típicamente en el rango de 1 a 5 segundos.
+El código en Python se ejecuta directamente mediante el intérprete. En una máquina moderna, este código puede tardar entre 5 y 20 minutos, dependiendo del hardware y la versión de Python utilizada.
+Observaciones:
+
+    Tiempo de Ejecución en C: Rápido, en el rango de segundos, gracias a la optimización realizada por el compilador y la ejecución directa del código máquina.
+    Tiempo de Ejecución en Python: Lento, en el rango de minutos, debido a la sobrecarga del intérprete y la interpretación en tiempo real.
+
+Conclusión del Ejercicio:
+
+Este ejercicio demuestra claramente cómo los lenguajes compilados, como C, ofrecen un rendimiento significativamente superior en términos de tiempo de ejecución para tareas computacionales intensivas. En contraste, los lenguajes interpretados, como Python, aunque ofrecen ventajas en términos de desarrollo y flexibilidad, pueden ser mucho más lentos en ejecución. Esta diferencia se debe principalmente a la eficiencia del código máquina generado por los compiladores frente a la sobrecarga del proceso de interpretación.
+
+
